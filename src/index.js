@@ -1,4 +1,8 @@
 console.log("RAGNAR");
 
-const domElements = require("../modules/dom_creation.js");
-domElements.initialPageLoad();
+import "./style.css";
+
+const content = document.getElementById("content");
+
+const mainPage = require("../modules/main_page.js");
+mainPage.mainPageLoad();
