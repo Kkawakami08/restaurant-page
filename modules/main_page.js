@@ -1,6 +1,7 @@
 function mainPageLoad() {
   //header
   const header = document.createElement("div");
+  header.classList.add("header");
   content.appendChild(header);
 
   const circleImage = document.createElement("img");
@@ -14,7 +15,8 @@ function mainPageLoad() {
 
   //page selection
   const pageSelect = document.createElement("div");
-  content.appendChild(pageSelect);
+  pageSelect.classList.add("page-select");
+  header.appendChild(pageSelect);
 
   const menuBtn = document.createElement("button");
   menuBtn.textContent = "MENU";
@@ -34,6 +36,7 @@ function mainPageLoad() {
 
   //about section
   const about = document.createElement("div");
+  about.classList.add("about");
   content.appendChild(about);
 
   const aboutTitle = document.createElement("h2");

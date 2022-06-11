@@ -3,10 +3,57 @@
   padding: 0;
 }
 
+:root {
+  --dark-color: #272932;
+  --light-color: #639a88;
+  --highlight-color: #3772ff;
+  --white-color: #e7ecef;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  background-color: var(--light-color);
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 4rem;
+}
+
+.page-select {
+  display: flex;
+  gap: 30px;
+}
+
+.page-select-btn {
+  background-color: var(--dark-color);
+  border: none;
+  color: var(--white-color);
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
 .circle-img {
   width: 300px;
 }
 
 .hero-img {
   width: 100vw;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  padding: 20px;
+}
+
+.about h2 {
+  font-size: 2rem;
 }
