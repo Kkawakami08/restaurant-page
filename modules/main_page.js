@@ -1,43 +1,19 @@
 function mainPageLoad() {
-  //header
-  const header = document.createElement("div");
-  header.classList.add("header");
-  content.appendChild(header);
+  content.innerHTML = "";
 
-  const circleImage = document.createElement("img");
-  circleImage.src = "../src/circle-lola.png";
-  circleImage.classList.add("circle-img");
-  header.appendChild(circleImage);
-
-  const restaurantName = document.createElement("h1");
-  restaurantName.innerHTML = "LOLA'S GRANOLAS";
-  header.appendChild(restaurantName);
-
-  //page selection
-  const pageSelect = document.createElement("div");
-  pageSelect.classList.add("page-select");
-  header.appendChild(pageSelect);
-
-  const menuBtn = document.createElement("button");
-  menuBtn.textContent = "MENU";
-  menuBtn.classList.add("page-select-btn");
-  pageSelect.appendChild(menuBtn);
-
-  const contactBtn = document.createElement("button");
-  contactBtn.textContent = "CONTACT";
-  contactBtn.classList.add("page-select-btn");
-  pageSelect.appendChild(contactBtn);
-
+  const homeContainer = document.createElement("div");
+  homeContainer.classList.add("home-container");
+  content.appendChild(homeContainer);
   //hero image
   const heroImg = document.createElement("img");
   heroImg.src = "../src/hero-lola.png";
   heroImg.classList.add("hero-img");
-  content.appendChild(heroImg);
+  homeContainer.appendChild(heroImg);
 
   //about section
   const about = document.createElement("div");
   about.classList.add("about");
-  content.appendChild(about);
+  homeContainer.appendChild(about);
 
   const aboutTitle = document.createElement("h2");
   aboutTitle.innerHTML = "ABOUT LOLA'S GRANOLAS";
